@@ -1,0 +1,106 @@
+
+container-fluid{
+   height: 100vh;
+}
+
+
+.phone-image{
+  max-width: 100%;
+    height: 400px;
+    position:absolute;
+    top: 30%;
+    left: 30%;
+}
+h2{
+   margin-top: 120px;
+   text-align: center;
+   font-size: 2.6rem;
+}
+.heading{
+   width: fit-content;
+}
+
+.yellow-button {
+         background-color:  #FCD34D;
+         color: black;
+         padding: 10px 25px;
+         border: none;
+         font-size: 16px;
+         border-radius: 15px;
+         margin-left: 60px;
+         margin-top: 40px;
+}
+.shop{
+   background:  #FCD34D;
+   width: 100%;
+   height: 100%;
+   height: 250px;
+   position: absolute;
+   top: 90%;
+   left:1%;
+   right:1%;
+
+}
+.shop h4,p{
+text-align: center;
+justify-content: center;
+margin-top: 35px;
+}
+.shop img{
+   width: 320px;
+   height: 110px;
+   position: absolute;
+   left: 35%;
+   bottom: 2%;
+}
+.container{
+   background: #fff;
+   position: absolute;
+   top:135%;
+   left: 10%;
+   width:80%;
+}
+.phone-photo{
+   width:250px;
+   margin-left: 50px;
+   margin-top: 45px;
+   margin-bottom:1000px ;
+}
+.phone-info{
+   position: absolute;
+    top: 10%; 
+   left: 45%;
+
+}
+.footer {
+   background: #FCD34D;
+   position: absolute;
+   top: 200%;
+   width: 100%;
+   height: 250px;
+   left: 1%;
+   right: 1%;
+}
+
+
+.footer .icons{
+   display: flex;
+   position: absolute;
+   text-align: center;
+   top:65%;
+   left:45%;
+   background-color: #FCD34D;
+}
+.footer-low {
+   background: #171717;
+   height: 100px;
+   width: 100%;
+   position: absolute;
+   top: 230%;
+   left: 1%;
+   margin-bottom: 30px;
+   margin-top: 40px;
+}
+.footer-low p{
+   margin-top: 10%;
+}

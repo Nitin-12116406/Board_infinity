@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Listing</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  />
+  <style>
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .product-details {
+      flex-grow: 1;
+    }
+
+    .rating {
+      color: #f1c40f;
+    }
+
+    .size-options,
+    .quantity {
+      margin-top: 10px;
+    }
+
+    .buy-now,
+    .add-to-cart {
+      margin-top: 20px;
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .old-price {
+      display: inline;
+      text-decoration: line-through;
+    }
+
+    .new-price {
+      display: inline;
+      font-weight: bold;
+    }
+
+    .discount {
+      display: inline;
+      color: green;
+    }
+
+    @media screen and (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+      }
+
+      .product-image img {
+        margin: 0;
+        margin-bottom: 20px;
+      }
+
+      .product-details {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h3 style="text-align: center">Product Page</h3>
+  <div class="product-container container">
+    <div class="product-image">
+      <img src="./shirt.png" alt="Product Image" />
+    </div>
+    <div class="product-details">
+      <h4>Green Cotton Tshirt</h4>
+      <p>Shirts</p>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <p class="new-price">Rs 400</p>
+      <p class="old-price">Rs 800</p>
+      <p class="discount">50% off!</p>
+      <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Color: Green</p>
+      <p>Availability: 3 In Stock</p>
+      <div class="size-options">
+        <label for="size">Select Size:</label>
+        <br>
+        <input type="radio" name="size" id="small" value="Small" />
+        <label for="small">Small</label>
+        <br>
+        <input type="radio" name="size" id="medium" value="Medium" />
+        <label for="medium">Medium</label>
+        <br>
+        <input type="radio" name="size" id="large" value="Large" />
+        <label for="large">Large</label>
+      </div>
+      <div class="quantity">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1" min="1" />
+      </div>
+      <button class="buy-now">Buy Now</button>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>
